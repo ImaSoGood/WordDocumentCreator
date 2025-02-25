@@ -25,7 +25,7 @@ namespace Konstructor
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form2 form2 = new Form2();
+            MainForm form2 = new MainForm();
             form2.Show();
             this.Hide();
         }
@@ -33,6 +33,13 @@ namespace Konstructor
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            MainForm form2 = new MainForm();
+            form2.Show();
+            this.Hide();
         }
     }
 }

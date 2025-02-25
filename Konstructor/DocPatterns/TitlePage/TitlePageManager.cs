@@ -83,9 +83,7 @@ namespace wordTest.DocPatterns
             contentManager.AddText(TownName, con.Center, 14);
             contentManager.AddText(YearDeveloped, con.Center, 14);
 
-
             contentManager.InsertPageBreak();
-            
         }
     }
 }

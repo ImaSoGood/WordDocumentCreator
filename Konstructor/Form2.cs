@@ -9,11 +9,20 @@ using Konstructor.DocPatterns;
 
 namespace Konstructor
 {
-    public partial class Form2 : Form
+    public partial class MainForm : Form
     {
-        public Form2()
+        public MainForm()
         {
             InitializeComponent();
+
+            try
+            {
+                throw new NotImplementedException();
+            }
+            catch
+            {
+                InitializeComponent();
+            }
         }
 
         private void button30_Click(object sender, EventArgs e)
@@ -210,7 +219,6 @@ namespace Konstructor
             CreatorName.Text = "";
             DeveloperPosition.Text = "";
             NameOO.Text = "";
-            textBox4.Text = "";
             FounderName.Text = "";
             TownName.Text = "";
             //textBox7.Text = "";
@@ -223,8 +231,7 @@ namespace Konstructor
             ProgramKnowledgeLevel.Text = "";
 
             //Записка 2  раздел
-            //Подпункт 1
-            dataGridView1.Rows.Clear();
+            //Подпункт 2
 
             //Подпункт 2
             Actuality.Text = "";
@@ -264,27 +271,13 @@ namespace Konstructor
 
             //Подпункт 6
 
-
-            try
-            {
-                //Здесь короч ебануть, чтобы удалялось через запрос SQL, Данные из таблиц должны нахуй стираться и поля отчиститься, мб через Case сделать
-            }
-
-            catch (Exception ex)
-            {
-                MessageBox.Show("Ошибка! Перезапустите приложение!" + ex);
-
-            }
-
-
-
         }
 
         /*
          * 
          *                                                          Начало
          *                                                  Рабочего пространства
-         *                                                  Namespace starts with...
+         *                                                 Namespace starts with...
          * 
          */
 
@@ -300,7 +293,7 @@ namespace Konstructor
             titlePageManager.CreateTitlePage();
 
             MainContentManager mainContentManager = new MainContentManager(document, new MainPageText(Actuality.Text, Newie.Text, ProgramSpecs.Text, Target.Text, MetasubjectTasks.Text,
-                PersonalTasks.Text, SubjectTasks.Text, "plannedResMetasubjects", "plannedResSubjects", "plannedResPersonal"));
+                PersonalTasks.Text, SubjectTasks.Text, "plannedResMetasubjects", "plannedResSubjects", "plannedResPersonal", ProgramKnowledgeLevel.Text, ProgramFocus.Text));
             mainContentManager.CreateMainPage(TimeAndCapacityTable, StudyPlan);
 
             string text = BibliographyText.Text;
@@ -336,6 +329,17 @@ namespace Konstructor
         {
             openListForm(PersonalTasks);
         }
+
+        private void ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new AboutProgram().ShowDialog();
+        }
+
+        /*private void оПрограммеToolStripMenuItem_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            AboutProgram aboutProgram = new AboutProgram();
+            this.ShowDialog(aboutProgram);
+        }*/
     }
 }
 

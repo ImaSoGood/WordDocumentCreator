@@ -94,6 +94,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutProgram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutProgram.Designer.cs">
+      <DependentUpon>AboutProgram.cs</DependentUpon>
+    </Compile>
     <Compile Include="BDDDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -105,7 +111,7 @@
     <Compile Include="DocPatterns\MainPage\MainContentManager.cs" />
     <Compile Include="DocPatterns\MainPage\MainPageText.cs" />
     <Compile Include="DocPatterns\MainPage\TableCreator.cs" />
-    <Compile Include="DocPatterns\TitlePageManager.cs" />
+    <Compile Include="DocPatterns\TitlePage\TitlePageManager.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +196,9 @@
     <Compile Include="DataTranserInterface\ITransfer.cs" />
     <Compile Include="WordFunctions\DocumentContentManager.cs" />
     <Compile Include="WordFunctions\WordListManager.cs" />
+    <EmbeddedResource Include="AboutProgram.resx">
+      <DependentUpon>AboutProgram.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

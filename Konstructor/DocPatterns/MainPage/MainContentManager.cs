@@ -30,19 +30,33 @@ namespace wordTest.DocPatterns
 
         public void CreateMainPage(System.Windows.Forms.DataGridView TimeAndCapacity, System.Windows.Forms.DataGridView StudyPlan)
         {
-            contentManager.AddNumberedPointWithMultipleLines("Актуальность: \n " + Text.actuality);
-            contentManager.AddNumberedPointWithMultipleLines("Цель и задачи: \n " + Text.target);
-            contentManager.AddNumberedPointWithMultipleLines("Предметные: \n " + Text.subjectTasks);
-            contentManager.AddNumberedPointWithMultipleLines("Метапредметные: \n " + Text.metasubjectTasks);
+            contentManager.AddCenteredText("Комплекс основных характеристик", 14, true);
+
+            contentManager.AddNumberedPointWithMultipleLines
+                (
+                    "Пояснительнпя записка \n " + Text.actuality + "\n" +
+                    "Далее: И что то еще можно написать..." + "\n" +
+                    "Направленность: " + Text.programFocus + "\n" +
+                    "Уровень освоения: " + Text.knowledgeLvl
+                );
+
+            contentManager.AddNumberedPointWithMultipleLines
+                (
+                    "Формы обучения \n" + "Пока не придумано)" 
+                );
+
+            contentManager.AddNumberedPointWithMultipleLines
+                (
+                    "Цель и задачи программы \n " + Text.target + "\n" + 
+                    "Предметные: \n" + Text.subjectTasks + "\n" +
+                    "Метапредметные: \n" + Text.metasubjectTasks + "\n" +
+                    "Личностные: \n " + Text.personalTasks
+                );
 
             new TableCreator(doc).TimeAndCapacityProgram(TimeAndCapacity);
-
-            contentManager.AddNumberedPointWithMultipleLines("Личностные: \n " + Text.personalTasks);
-            contentManager.AddNumberedPointWithMultipleLines("Учебный план: \n ");
+            contentManager.AddNumberedPointWithMultipleLines("Учебный план: ");
 
             new TableCreator(doc).Plan(StudyPlan);
-
-            //new TableCreator(doc).CreateTableConstructor(3, 3, new string[,] { {"H1", "H2", "H3" }, {"rc1", "rc2", "rc3" }, { "Row2Col1", "Row2Col2", "Row2Col3" } });
             contentManager.InsertPageBreak();
         }
     }

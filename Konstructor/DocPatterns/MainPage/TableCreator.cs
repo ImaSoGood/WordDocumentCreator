@@ -23,14 +23,11 @@ namespace Konstructor.DocPatterns.MainPage
 
         public void CreateTableConstructor(int rows, int columns, string[,] data)
         {
-            // Добавляем таблицу в документ
             Word.Range range = doc.Content.Paragraphs.Add().Range;
             Word.Table table = doc.Tables.Add(range, rows, columns);
 
-            // Применение стилей к таблице (например, границы)
             table.Borders.Enable = 1;  // Включить границы для таблицы
 
-            // Заполнение таблицы данными
             for (int row = 1; row <= rows; row++)
             {
                 for (int col = 1; col <= columns; col++)
@@ -39,15 +36,66 @@ namespace Konstructor.DocPatterns.MainPage
                 }
             }
 
-            // Пример форматирования таблицы
             table.Rows.HeightRule = Word.WdRowHeightRule.wdRowHeightAtLeast;
             table.Rows.Height = doc.Application.CentimetersToPoints(0.8f);
             table.Range.ParagraphFormat.Alignment = Word.WdParagraphAlignment.wdAlignParagraphCenter;
             table.Range.Font.Size = 10;
             table.Range.Font.Name = "Times New Roman";
 
-            // Вставить параграф после таблицы
             table.Range.InsertParagraphAfter();
+        }
+
+        public void CreateTablePlan(int rows, int columns, string[,] data)
+        {
+            Word.Range range = doc.Content.Paragraphs.Add().Range;
+            Word.Table table = doc.Tables.Add(range, rows, columns);
+
+            table.Borders.Enable = 1;  // Включить границы для таблицы
+
+            for (int row = 1; row <= rows; row++)
+            {
+                if (row >= 2 && IsInteger(data[row - 1, 0]))
+                {
+                    int curCol = 1;
+                    Word.Cell cellToMerge = table.Cell(row, 1);
+                    Word.Cell cellToMergeWith = table.Cell(row, 2);
+                    cellToMerge.Merge(cellToMergeWith); // Объединение ячеек
+                    cellToMerge.Range.Text = data[row - 1, curCol - 1] + " " + data[row - 1, curCol];
+                    curCol += 2;
+
+                    for (int i = curCol - 1; i <= 5; i++)
+                    {
+                        table.Cell(row, i).Range.Text = data[row - 1, i];
+                    }
+                }
+                else 
+                {
+                    for (int i = 1; i <= columns; i++) // Начните с 1
+                    {
+                        table.Cell(row, i).Range.Text = data[row - 1, i - 1]; // Корректное обращение к элементам массива
+                    }
+                }
+            }
+
+            table.Rows.HeightRule = Word.WdRowHeightRule.wdRowHeightAtLeast;
+            table.Rows.Height = doc.Application.CentimetersToPoints(0.8f);
+            table.Range.ParagraphFormat.Alignment = Word.WdParagraphAlignment.wdAlignParagraphCenter;
+            table.Range.Font.Size = 10;
+            table.Range.Font.Name = "Times New Roman";
+
+            table.Range.InsertParagraphAfter();
+        }
+
+        private bool IsInteger(string s)
+        {
+            s = s.TrimEnd('.');
+
+            if (int.TryParse(s, out _))
+            {
+                return true; // Это целое число
+            }
+
+            return false; // Это не целое число
         }
 
         public void TimeAndCapacityProgram(System.Windows.Forms.DataGridView data)
@@ -76,7 +124,7 @@ namespace Konstructor.DocPatterns.MainPage
 
             string[,] tableData = getDataFromTable(data, con.StudyPlan);
 
-            CreateTableConstructor(data.Rows.Count, data.Columns.Count, tableData);
+            CreateTablePlan(data.Rows.Count, data.Columns.Count, tableData);
 
             // Удаляем временный пункт
             tempParagraph.Range.ListFormat.RemoveNumbers();

@@ -105,6 +105,8 @@ namespace wordTest.WordFunctions
         public void AddNumberedPointWithMultipleLines(string text)
         {
             Word.Paragraph paragraph = doc.Content.Paragraphs.Add();
+            paragraph.Range.Font.Name = con.FontTNR;
+            paragraph.Range.Font.Size = 12f;
 
             text = textToArray(text);
             paragraph.Range.Text = "";
@@ -119,6 +121,7 @@ namespace wordTest.WordFunctions
             paragraph.Range.InsertParagraphAfter();
 
             currentListNumber++;
+
             paragraph.Range.ParagraphFormat.Reset();
         }
 
