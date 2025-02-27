@@ -20,19 +20,11 @@ namespace Konstructor
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+
+
+        private void label7_Click(object sender, EventArgs e)
         {
             Process.Start(site_str);
-        }
-
-        private void label1_MouseEnter(object sender, EventArgs e)
-        {
-            Note.Visible = true;
-        }
-
-        private void label1_MouseLeave(object sender, EventArgs e)
-        {
-            Note.Visible = false;
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Konstructor
 {
-    partial class Form9
+    partial class TasksShowcase
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form9));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TasksShowcase));
             this.label46 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
@@ -168,7 +168,7 @@
             this.label2.TabIndex = 73;
             this.label2.Text = "Личностные задачи (пример)";
             // 
-            // Form9
+            // TasksShowcase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -187,7 +187,7 @@
             this.Controls.Add(this.label46);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form9";
+            this.Name = "TasksShowcase";
             this.Text = "Справка - задачи (примеры)";
             this.Load += new System.EventHandler(this.Form9_Load);
             this.ResumeLayout(false);

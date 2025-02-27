@@ -19,9 +19,6 @@ namespace Konstructor
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "bDDDataSet.Titul". При необходимости она может быть перемещена или удалена.
-            this.TitulTableAdapter.Fill(this.bDDDataSet.Titul);
-
             this.reportViewer1.RefreshReport();
         }
     }

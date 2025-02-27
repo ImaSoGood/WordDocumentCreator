@@ -32,11 +32,8 @@
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.bDDDataSet = new Konstructor.BDDDataSet();
             this.bDDDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.TitulBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.TitulTableAdapter = new Konstructor.BDDDataSetTableAdapters.TitulTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.bDDDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bDDDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TitulBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -54,25 +51,6 @@
             this.reportViewer1.Size = new System.Drawing.Size(800, 450);
             this.reportViewer1.TabIndex = 0;
             // 
-            // bDDDataSet
-            // 
-            this.bDDDataSet.DataSetName = "BDDDataSet";
-            this.bDDDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bDDDataSetBindingSource
-            // 
-            this.bDDDataSetBindingSource.DataSource = this.bDDDataSet;
-            this.bDDDataSetBindingSource.Position = 0;
-            // 
-            // TitulBindingSource
-            // 
-            this.TitulBindingSource.DataMember = "Titul";
-            this.TitulBindingSource.DataSource = this.bDDDataSet;
-            // 
-            // TitulTableAdapter
-            // 
-            this.TitulTableAdapter.ClearBeforeFill = true;
-            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -83,9 +61,6 @@
             this.Name = "Form3";
             this.Text = "Отчет";
             this.Load += new System.EventHandler(this.Form3_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bDDDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bDDDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TitulBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -94,8 +69,6 @@
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource bDDDataSetBindingSource;
-        private BDDDataSet bDDDataSet;
         private System.Windows.Forms.BindingSource TitulBindingSource;
-        private BDDDataSetTableAdapters.TitulTableAdapter TitulTableAdapter;
     }
 }

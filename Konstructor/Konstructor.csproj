@@ -94,24 +94,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutProgram.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AboutProgram.Designer.cs">
-      <DependentUpon>AboutProgram.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BDDDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BDDDataSet.xsd</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
-    <Compile Include="Constants.cs" />
+    <Compile Include="Constants\Constant.cs" />
+    <Compile Include="Constants\ExplanatoryForms.cs" />
     <Compile Include="DocPatterns\Bibliography.cs" />
     <Compile Include="DocPatterns\MainPage\MainContentManager.cs" />
     <Compile Include="DocPatterns\MainPage\MainPageText.cs" />
     <Compile Include="DocPatterns\MainPage\TableCreator.cs" />
     <Compile Include="DocPatterns\TitlePage\TitlePageManager.cs" />
+    <Compile Include="FormExplanation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormExplanation.Designer.cs">
+      <DependentUpon>FormExplanation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,41 +143,23 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="AboutProgram.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="AboutProgram.Designer.cs">
+      <DependentUpon>AboutProgram.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form5.cs">
+    <Compile Include="AboutProgramNEW.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <Compile Include="AboutProgramNEW.Designer.cs">
+      <DependentUpon>AboutProgramNEW.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form6.cs">
+    <Compile Include="TasksShowcase.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form6.Designer.cs">
-      <DependentUpon>Form6.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form7.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form7.Designer.cs">
-      <DependentUpon>Form7.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form8.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form8.Designer.cs">
-      <DependentUpon>Form8.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form9.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form9.Designer.cs">
-      <DependentUpon>Form9.cs</DependentUpon>
+    <Compile Include="TasksShowcase.Designer.cs">
+      <DependentUpon>TasksShowcase.cs</DependentUpon>
     </Compile>
     <Compile Include="ListForm.cs">
       <SubType>Form</SubType>
@@ -196,8 +173,8 @@
     <Compile Include="DataTranserInterface\ITransfer.cs" />
     <Compile Include="WordFunctions\DocumentContentManager.cs" />
     <Compile Include="WordFunctions\WordListManager.cs" />
-    <EmbeddedResource Include="AboutProgram.resx">
-      <DependentUpon>AboutProgram.cs</DependentUpon>
+    <EmbeddedResource Include="FormExplanation.resx">
+      <DependentUpon>FormExplanation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -217,23 +194,14 @@
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="AboutProgram.resx">
+      <DependentUpon>AboutProgram.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <EmbeddedResource Include="AboutProgramNEW.resx">
+      <DependentUpon>AboutProgramNEW.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form6.resx">
-      <DependentUpon>Form6.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form7.resx">
-      <DependentUpon>Form7.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form8.resx">
-      <DependentUpon>Form8.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form9.resx">
-      <DependentUpon>Form9.cs</DependentUpon>
+    <EmbeddedResource Include="TasksShowcase.resx">
+      <DependentUpon>TasksShowcase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListForm.resx">
       <DependentUpon>ListForm.cs</DependentUpon>
@@ -249,20 +217,6 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Report1.rdlc" />
-    <None Include="BDDDataSet.xsc">
-      <DependentUpon>BDDDataSet.xsd</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="BDDDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BDDDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="BDDDataSet.xss">
-      <DependentUpon>BDDDataSet.xsd</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -278,9 +232,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BDD.accdb">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

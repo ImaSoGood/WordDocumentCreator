@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Konstructor
 {
-    public partial class Form7 : Form
+    public partial class TasksShowcase : Form
     {
-        public Form7()
+        public TasksShowcase()
         {
             InitializeComponent();
+        }
+
+        private void Form9_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

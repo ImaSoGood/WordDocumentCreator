@@ -7,7 +7,7 @@ namespace wordTest.WordFunctions
     public class DocumentContentManager
     {
         public Word.Document doc;
-        public Constants con = new Constants();
+        public Constant con = new Constant();
         private int currentListNumber = 1;
 
         public DocumentContentManager(Word.Document doc)

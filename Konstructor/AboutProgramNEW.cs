@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Konstructor
 {
-    public partial class Form5 : Form
+    public partial class AboutProgramNEW : Form
     {
-        public Form5()
+        public AboutProgramNEW()
         {
             InitializeComponent();
         }

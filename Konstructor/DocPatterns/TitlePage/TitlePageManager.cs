@@ -8,7 +8,7 @@ namespace wordTest.DocPatterns
     public class TitlePageManager
     {
         private DocumentContentManager contentManager;
-        private Constants con = new Constants();
+        private Constant con = new Constant();
 
         private string CreatorName;
         private string DevName;

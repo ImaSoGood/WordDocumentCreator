@@ -13,7 +13,7 @@ namespace Konstructor.DocPatterns.MainPage
     {
         Word.Document doc;
         DocumentContentManager contentManager;
-        Constants con = new Constants();
+        Constant con = new Constant();
 
         public TableCreator(Word.Document doc)
         {

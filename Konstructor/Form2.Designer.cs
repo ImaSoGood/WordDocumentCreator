@@ -31,19 +31,19 @@ namespace Konstructor
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label44 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.DevelopmentTimeM = new System.Windows.Forms.TextBox();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
+            this.ProgramFocusQ = new System.Windows.Forms.Button();
+            this.AgeStudQ = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.StudentsAge = new System.Windows.Forms.TextBox();
-            this.button14 = new System.Windows.Forms.Button();
+            this.LvlDifficultyQ = new System.Windows.Forms.Button();
             this.ProgramKnowledgeLevel = new System.Windows.Forms.ComboBox();
             this.ProgramFocus = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -54,7 +54,6 @@ namespace Konstructor
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.ProgramName = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.TownName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -76,13 +75,13 @@ namespace Konstructor
             this.label16 = new System.Windows.Forms.Label();
             this.tabPage14 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button33 = new System.Windows.Forms.Button();
+            this.ButtonTargetQ = new System.Windows.Forms.Button();
             this.Target = new System.Windows.Forms.RichTextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.tabPage16 = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.HelpForTablePlan = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
+            this.TablePlanQ = new System.Windows.Forms.Button();
+            this.ProgramTasksQ = new System.Windows.Forms.Button();
             this.StudyPlan = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -113,10 +112,12 @@ namespace Konstructor
             this.label8 = new System.Windows.Forms.Label();
             this.richTextBox16 = new System.Windows.Forms.RichTextBox();
             this.label49 = new System.Windows.Forms.Label();
-            this.button34 = new System.Windows.Forms.Button();
+            this.PlannedResultsQ = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabControl4 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -137,15 +138,14 @@ namespace Konstructor
             this.label28 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label32 = new System.Windows.Forms.Label();
             this.richTextBox9 = new System.Windows.Forms.RichTextBox();
             this.label31 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage19 = new System.Windows.Forms.TabPage();
             this.BibliographyText = new System.Windows.Forms.RichTextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.tabPage18 = new System.Windows.Forms.TabPage();
-            this.button29 = new System.Windows.Forms.Button();
+            this.ButtonCreateDoc = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
             this.richTextBox10 = new System.Windows.Forms.RichTextBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
@@ -157,6 +157,8 @@ namespace Konstructor
             this.ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.instruction = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.CheckListBoxAttestation = new System.Windows.Forms.CheckedListBox();
+            this.LabelAttestation = new System.Windows.Forms.Label();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -171,6 +173,7 @@ namespace Konstructor
             this.tabPage12.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabControl4.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.tabPage7.SuspendLayout();
@@ -190,11 +193,11 @@ namespace Konstructor
             this.tabControl2.Controls.Add(this.tabPage19);
             this.tabControl2.Controls.Add(this.tabPage18);
             this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl2.Location = new System.Drawing.Point(0, 28);
+            this.tabControl2.Location = new System.Drawing.Point(0, 30);
             this.tabControl2.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1459, 696);
+            this.tabControl2.Size = new System.Drawing.Size(1459, 694);
             this.tabControl2.TabIndex = 3;
             // 
             // tabPage3
@@ -202,11 +205,11 @@ namespace Konstructor
             this.tabPage3.Controls.Add(this.label44);
             this.tabPage3.Controls.Add(this.label43);
             this.tabPage3.Controls.Add(this.DevelopmentTimeM);
-            this.tabPage3.Controls.Add(this.button26);
-            this.tabPage3.Controls.Add(this.button15);
+            this.tabPage3.Controls.Add(this.ProgramFocusQ);
+            this.tabPage3.Controls.Add(this.AgeStudQ);
             this.tabPage3.Controls.Add(this.label14);
             this.tabPage3.Controls.Add(this.StudentsAge);
-            this.tabPage3.Controls.Add(this.button14);
+            this.tabPage3.Controls.Add(this.LvlDifficultyQ);
             this.tabPage3.Controls.Add(this.ProgramKnowledgeLevel);
             this.tabPage3.Controls.Add(this.ProgramFocus);
             this.tabPage3.Controls.Add(this.label9);
@@ -217,7 +220,6 @@ namespace Konstructor
             this.tabPage3.Controls.Add(this.label12);
             this.tabPage3.Controls.Add(this.label13);
             this.tabPage3.Controls.Add(this.ProgramName);
-            this.tabPage3.Controls.Add(this.button1);
             this.tabPage3.Controls.Add(this.label6);
             this.tabPage3.Controls.Add(this.TownName);
             this.tabPage3.Controls.Add(this.label2);
@@ -232,7 +234,7 @@ namespace Konstructor
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Size = new System.Drawing.Size(1451, 667);
+            this.tabPage3.Size = new System.Drawing.Size(1451, 665);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Титульный лист";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -258,7 +260,6 @@ namespace Konstructor
             this.label43.Size = new System.Drawing.Size(41, 20);
             this.label43.TabIndex = 46;
             this.label43.Text = "Лет";
-            this.label43.Click += new System.EventHandler(this.label43_Click);
             // 
             // DevelopmentTimeM
             // 
@@ -268,27 +269,27 @@ namespace Konstructor
             this.DevelopmentTimeM.Size = new System.Drawing.Size(109, 22);
             this.DevelopmentTimeM.TabIndex = 45;
             // 
-            // button26
+            // ProgramFocusQ
             // 
-            this.button26.Location = new System.Drawing.Point(1164, 185);
-            this.button26.Margin = new System.Windows.Forms.Padding(4);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(31, 26);
-            this.button26.TabIndex = 44;
-            this.button26.Text = "?";
-            this.button26.UseVisualStyleBackColor = true;
-            this.button26.Click += new System.EventHandler(this.button26_Click);
+            this.ProgramFocusQ.Location = new System.Drawing.Point(1381, 214);
+            this.ProgramFocusQ.Margin = new System.Windows.Forms.Padding(4);
+            this.ProgramFocusQ.Name = "ProgramFocusQ";
+            this.ProgramFocusQ.Size = new System.Drawing.Size(31, 24);
+            this.ProgramFocusQ.TabIndex = 44;
+            this.ProgramFocusQ.Text = "?";
+            this.ProgramFocusQ.UseVisualStyleBackColor = true;
+            this.ProgramFocusQ.Click += new System.EventHandler(this.button26_Click);
             // 
-            // button15
+            // AgeStudQ
             // 
-            this.button15.Location = new System.Drawing.Point(1104, 359);
-            this.button15.Margin = new System.Windows.Forms.Padding(4);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(31, 26);
-            this.button15.TabIndex = 43;
-            this.button15.Text = "?";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
+            this.AgeStudQ.Location = new System.Drawing.Point(1296, 387);
+            this.AgeStudQ.Margin = new System.Windows.Forms.Padding(4);
+            this.AgeStudQ.Name = "AgeStudQ";
+            this.AgeStudQ.Size = new System.Drawing.Size(31, 25);
+            this.AgeStudQ.TabIndex = 43;
+            this.AgeStudQ.Text = "?";
+            this.AgeStudQ.UseVisualStyleBackColor = true;
+            this.AgeStudQ.Click += new System.EventHandler(this.button15_Click);
             // 
             // label14
             // 
@@ -309,16 +310,16 @@ namespace Konstructor
             this.StudentsAge.Size = new System.Drawing.Size(412, 22);
             this.StudentsAge.TabIndex = 41;
             // 
-            // button14
+            // LvlDifficultyQ
             // 
-            this.button14.Location = new System.Drawing.Point(495, 389);
-            this.button14.Margin = new System.Windows.Forms.Padding(4);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(31, 26);
-            this.button14.TabIndex = 40;
-            this.button14.Text = "?";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
+            this.LvlDifficultyQ.Location = new System.Drawing.Point(493, 389);
+            this.LvlDifficultyQ.Margin = new System.Windows.Forms.Padding(4);
+            this.LvlDifficultyQ.Name = "LvlDifficultyQ";
+            this.LvlDifficultyQ.Size = new System.Drawing.Size(31, 24);
+            this.LvlDifficultyQ.TabIndex = 40;
+            this.LvlDifficultyQ.Text = "?";
+            this.LvlDifficultyQ.UseVisualStyleBackColor = true;
+            this.LvlDifficultyQ.Click += new System.EventHandler(this.button14_Click);
             // 
             // ProgramKnowledgeLevel
             // 
@@ -348,6 +349,7 @@ namespace Konstructor
             this.ProgramFocus.Name = "ProgramFocus";
             this.ProgramFocus.Size = new System.Drawing.Size(497, 24);
             this.ProgramFocus.TabIndex = 38;
+            this.ProgramFocus.SelectedIndexChanged += new System.EventHandler(this.ProgramFocus_SelectedIndexChanged);
             // 
             // label9
             // 
@@ -367,7 +369,6 @@ namespace Konstructor
             this.DevelopmentTimeY.Name = "DevelopmentTimeY";
             this.DevelopmentTimeY.Size = new System.Drawing.Size(93, 22);
             this.DevelopmentTimeY.TabIndex = 34;
-            this.DevelopmentTimeY.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // label10
             // 
@@ -428,18 +429,6 @@ namespace Konstructor
             this.ProgramName.Name = "ProgramName";
             this.ProgramName.Size = new System.Drawing.Size(497, 22);
             this.ProgramName.TabIndex = 26;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(1311, 578);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(131, 44);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Далее";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
             // 
@@ -545,7 +534,7 @@ namespace Konstructor
             this.tabPage4.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage4.Size = new System.Drawing.Size(1451, 667);
             this.tabPage4.TabIndex = 1;
-            this.tabPage4.Text = "Комплекс основных характеристик ДОП";
+            this.tabPage4.Text = "Комплекс основных характеристик";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // tabControl3
@@ -661,7 +650,7 @@ namespace Konstructor
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button33);
+            this.panel1.Controls.Add(this.ButtonTargetQ);
             this.panel1.Controls.Add(this.Target);
             this.panel1.Controls.Add(this.label20);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -671,33 +660,31 @@ namespace Konstructor
             this.panel1.Size = new System.Drawing.Size(1435, 630);
             this.panel1.TabIndex = 19;
             // 
-            // button33
+            // ButtonTargetQ
             // 
-            this.button33.Location = new System.Drawing.Point(67, -1);
-            this.button33.Margin = new System.Windows.Forms.Padding(4);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(31, 26);
-            this.button33.TabIndex = 60;
-            this.button33.Text = "?";
-            this.button33.UseVisualStyleBackColor = true;
-            this.button33.Click += new System.EventHandler(this.button33_Click_1);
+            this.ButtonTargetQ.Location = new System.Drawing.Point(71, 27);
+            this.ButtonTargetQ.Margin = new System.Windows.Forms.Padding(4);
+            this.ButtonTargetQ.Name = "ButtonTargetQ";
+            this.ButtonTargetQ.Size = new System.Drawing.Size(31, 26);
+            this.ButtonTargetQ.TabIndex = 60;
+            this.ButtonTargetQ.Text = "?";
+            this.ButtonTargetQ.UseVisualStyleBackColor = true;
+            this.ButtonTargetQ.Click += new System.EventHandler(this.button33_Click_1);
             // 
             // Target
             // 
-            this.Target.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Target.Location = new System.Drawing.Point(0, 25);
+            this.Target.Location = new System.Drawing.Point(0, 66);
             this.Target.Margin = new System.Windows.Forms.Padding(4);
             this.Target.Name = "Target";
-            this.Target.Size = new System.Drawing.Size(1435, 313);
+            this.Target.Size = new System.Drawing.Size(1435, 560);
             this.Target.TabIndex = 45;
             this.Target.Text = "";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Dock = System.Windows.Forms.DockStyle.Top;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label20.Location = new System.Drawing.Point(0, 0);
+            this.label20.Location = new System.Drawing.Point(4, 25);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(59, 25);
@@ -717,8 +704,8 @@ namespace Konstructor
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.HelpForTablePlan);
-            this.panel3.Controls.Add(this.button27);
+            this.panel3.Controls.Add(this.TablePlanQ);
+            this.panel3.Controls.Add(this.ProgramTasksQ);
             this.panel3.Controls.Add(this.StudyPlan);
             this.panel3.Controls.Add(this.label19);
             this.panel3.Controls.Add(this.TimeAndCapacityTable);
@@ -737,31 +724,32 @@ namespace Konstructor
             this.panel3.Size = new System.Drawing.Size(1435, 630);
             this.panel3.TabIndex = 21;
             // 
-            // HelpForTablePlan
+            // TablePlanQ
             // 
-            this.HelpForTablePlan.Location = new System.Drawing.Point(150, 382);
-            this.HelpForTablePlan.Margin = new System.Windows.Forms.Padding(4);
-            this.HelpForTablePlan.Name = "HelpForTablePlan";
-            this.HelpForTablePlan.Size = new System.Drawing.Size(31, 26);
-            this.HelpForTablePlan.TabIndex = 69;
-            this.HelpForTablePlan.Text = "?";
-            this.HelpForTablePlan.UseVisualStyleBackColor = true;
+            this.TablePlanQ.Location = new System.Drawing.Point(166, 390);
+            this.TablePlanQ.Margin = new System.Windows.Forms.Padding(4);
+            this.TablePlanQ.Name = "TablePlanQ";
+            this.TablePlanQ.Size = new System.Drawing.Size(31, 26);
+            this.TablePlanQ.TabIndex = 69;
+            this.TablePlanQ.Text = "?";
+            this.TablePlanQ.UseVisualStyleBackColor = true;
+            this.TablePlanQ.Click += new System.EventHandler(this.TablePlanQ_Click);
             // 
-            // button27
+            // ProgramTasksQ
             // 
-            this.button27.Location = new System.Drawing.Point(661, -1);
-            this.button27.Margin = new System.Windows.Forms.Padding(4);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(31, 26);
-            this.button27.TabIndex = 61;
-            this.button27.Text = "?";
-            this.button27.UseVisualStyleBackColor = true;
-            this.button27.Click += new System.EventHandler(this.button27_Click);
+            this.ProgramTasksQ.Location = new System.Drawing.Point(671, 2);
+            this.ProgramTasksQ.Margin = new System.Windows.Forms.Padding(4);
+            this.ProgramTasksQ.Name = "ProgramTasksQ";
+            this.ProgramTasksQ.Size = new System.Drawing.Size(31, 26);
+            this.ProgramTasksQ.TabIndex = 61;
+            this.ProgramTasksQ.Text = "?";
+            this.ProgramTasksQ.UseVisualStyleBackColor = true;
+            this.ProgramTasksQ.Click += new System.EventHandler(this.button27_Click);
             // 
             // StudyPlan
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.StudyPlan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.StudyPlan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.StudyPlan.BackgroundColor = System.Drawing.SystemColors.Window;
             this.StudyPlan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.StudyPlan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -771,9 +759,8 @@ namespace Konstructor
             this.Column12,
             this.Column13,
             this.Column14});
-            this.StudyPlan.Dock = System.Windows.Forms.DockStyle.Top;
             this.StudyPlan.GridColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.StudyPlan.Location = new System.Drawing.Point(0, 407);
+            this.StudyPlan.Location = new System.Drawing.Point(-1, 429);
             this.StudyPlan.Margin = new System.Windows.Forms.Padding(4);
             this.StudyPlan.Name = "StudyPlan";
             this.StudyPlan.RowHeadersWidth = 51;
@@ -825,9 +812,8 @@ namespace Konstructor
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Dock = System.Windows.Forms.DockStyle.Top;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label19.Location = new System.Drawing.Point(0, 382);
+            this.label19.Location = new System.Drawing.Point(4, 391);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(142, 25);
@@ -836,8 +822,8 @@ namespace Konstructor
             // 
             // TimeAndCapacityTable
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.TimeAndCapacityTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.TimeAndCapacityTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.TimeAndCapacityTable.BackgroundColor = System.Drawing.SystemColors.Window;
             this.TimeAndCapacityTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.TimeAndCapacityTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1001,7 +987,7 @@ namespace Konstructor
             this.tabPage12.Controls.Add(this.label8);
             this.tabPage12.Controls.Add(this.richTextBox16);
             this.tabPage12.Controls.Add(this.label49);
-            this.tabPage12.Controls.Add(this.button34);
+            this.tabPage12.Controls.Add(this.PlannedResultsQ);
             this.tabPage12.Controls.Add(this.label24);
             this.tabPage12.Location = new System.Drawing.Point(4, 25);
             this.tabPage12.Margin = new System.Windows.Forms.Padding(4);
@@ -1078,16 +1064,16 @@ namespace Konstructor
             this.label49.TabIndex = 70;
             this.label49.Text = "Метапредметные";
             // 
-            // button34
+            // PlannedResultsQ
             // 
-            this.button34.Location = new System.Drawing.Point(272, 6);
-            this.button34.Margin = new System.Windows.Forms.Padding(4);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(31, 26);
-            this.button34.TabIndex = 61;
-            this.button34.Text = "?";
-            this.button34.UseVisualStyleBackColor = true;
-            this.button34.Click += new System.EventHandler(this.button34_Click);
+            this.PlannedResultsQ.Location = new System.Drawing.Point(294, 6);
+            this.PlannedResultsQ.Margin = new System.Windows.Forms.Padding(4);
+            this.PlannedResultsQ.Name = "PlannedResultsQ";
+            this.PlannedResultsQ.Size = new System.Drawing.Size(31, 26);
+            this.PlannedResultsQ.TabIndex = 61;
+            this.PlannedResultsQ.Text = "?";
+            this.PlannedResultsQ.UseVisualStyleBackColor = true;
+            this.PlannedResultsQ.Click += new System.EventHandler(this.button34_Click);
             // 
             // label24
             // 
@@ -1107,23 +1093,44 @@ namespace Konstructor
             this.tabPage6.Location = new System.Drawing.Point(4, 25);
             this.tabPage6.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1451, 667);
+            this.tabPage6.Size = new System.Drawing.Size(1451, 665);
             this.tabPage6.TabIndex = 3;
             this.tabPage6.Text = "Комплекс организационно-педагогических условий";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // tabControl4
             // 
+            this.tabControl4.Controls.Add(this.tabPage1);
             this.tabControl4.Controls.Add(this.tabPage5);
             this.tabControl4.Controls.Add(this.tabPage7);
             this.tabControl4.Controls.Add(this.tabPage8);
+            this.tabControl4.Controls.Add(this.tabPage2);
             this.tabControl4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl4.Location = new System.Drawing.Point(0, 0);
             this.tabControl4.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl4.Name = "tabControl4";
             this.tabControl4.SelectedIndex = 0;
-            this.tabControl4.Size = new System.Drawing.Size(1451, 667);
+            this.tabControl4.Size = new System.Drawing.Size(1451, 665);
             this.tabControl4.TabIndex = 3;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.richTextBox1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Size = new System.Drawing.Size(1443, 638);
+            this.tabPage1.TabIndex = 5;
+            this.tabPage1.Text = "Нормативно-правовое обеспечение";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(1444, 632);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // tabPage5
             // 
@@ -1248,7 +1255,7 @@ namespace Konstructor
             this.richTextBox8.Location = new System.Drawing.Point(0, 423);
             this.richTextBox8.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox8.Name = "richTextBox8";
-            this.richTextBox8.Size = new System.Drawing.Size(1443, 143);
+            this.richTextBox8.Size = new System.Drawing.Size(1443, 190);
             this.richTextBox8.TabIndex = 73;
             this.richTextBox8.Text = "";
             // 
@@ -1333,63 +1340,47 @@ namespace Konstructor
             // 
             // tabPage8
             // 
-            this.tabPage8.Controls.Add(this.comboBox4);
-            this.tabPage8.Controls.Add(this.label32);
+            this.tabPage8.Controls.Add(this.LabelAttestation);
+            this.tabPage8.Controls.Add(this.CheckListBoxAttestation);
             this.tabPage8.Controls.Add(this.richTextBox9);
             this.tabPage8.Controls.Add(this.label31);
             this.tabPage8.Location = new System.Drawing.Point(4, 25);
             this.tabPage8.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(1443, 638);
+            this.tabPage8.Size = new System.Drawing.Size(1443, 636);
             this.tabPage8.TabIndex = 4;
             this.tabPage8.Text = "Формы аттестации";
             this.tabPage8.UseVisualStyleBackColor = true;
             // 
-            // comboBox4
-            // 
-            this.comboBox4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(0, 209);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(1443, 24);
-            this.comboBox4.TabIndex = 65;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label32.Location = new System.Drawing.Point(0, 184);
-            this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(1122, 25);
-            this.label32.TabIndex = 64;
-            this.label32.Text = "Оценочные материалы (диагностические карты, контрольные нормативы, тестовые задан" +
-    "ия, оценочные листы и др)";
-            // 
             // richTextBox9
             // 
-            this.richTextBox9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.richTextBox9.Location = new System.Drawing.Point(0, 25);
+            this.richTextBox9.Location = new System.Drawing.Point(0, 29);
             this.richTextBox9.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox9.Name = "richTextBox9";
-            this.richTextBox9.Size = new System.Drawing.Size(1443, 159);
+            this.richTextBox9.Size = new System.Drawing.Size(1443, 226);
             this.richTextBox9.TabIndex = 63;
             this.richTextBox9.Text = "";
             // 
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Dock = System.Windows.Forms.DockStyle.Top;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label31.Location = new System.Drawing.Point(0, 0);
             this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(1349, 25);
+            this.label31.Size = new System.Drawing.Size(881, 25);
             this.label31.TabIndex = 62;
-            this.label31.Text = "Формы аттестации/контроля (разрабатываются индивидуально для определения результа" +
-    "тивности освоения образовательной программы)";
+            this.label31.Text = "Формы аттестации/контроля для выявления предметных и метапредметных результатов\r\n" +
+    "";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Size = new System.Drawing.Size(1443, 638);
+            this.tabPage2.TabIndex = 6;
+            this.tabPage2.Text = "Оценочные материалы";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabPage19
             // 
@@ -1428,7 +1419,7 @@ namespace Konstructor
             // 
             // tabPage18
             // 
-            this.tabPage18.Controls.Add(this.button29);
+            this.tabPage18.Controls.Add(this.ButtonCreateDoc);
             this.tabPage18.Controls.Add(this.label26);
             this.tabPage18.Controls.Add(this.richTextBox10);
             this.tabPage18.Location = new System.Drawing.Point(4, 25);
@@ -1439,17 +1430,17 @@ namespace Konstructor
             this.tabPage18.Text = "Приложения";
             this.tabPage18.UseVisualStyleBackColor = true;
             // 
-            // button29
+            // ButtonCreateDoc
             // 
-            this.button29.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button29.Location = new System.Drawing.Point(1239, 550);
-            this.button29.Margin = new System.Windows.Forms.Padding(4);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(203, 73);
-            this.button29.TabIndex = 21;
-            this.button29.Text = "Создать документ";
-            this.button29.UseVisualStyleBackColor = true;
-            this.button29.Click += new System.EventHandler(this.button29_Click);
+            this.ButtonCreateDoc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ButtonCreateDoc.Location = new System.Drawing.Point(1239, 550);
+            this.ButtonCreateDoc.Margin = new System.Windows.Forms.Padding(4);
+            this.ButtonCreateDoc.Name = "ButtonCreateDoc";
+            this.ButtonCreateDoc.Size = new System.Drawing.Size(203, 73);
+            this.ButtonCreateDoc.TabIndex = 21;
+            this.ButtonCreateDoc.Text = "Создать документ";
+            this.ButtonCreateDoc.UseVisualStyleBackColor = true;
+            this.ButtonCreateDoc.Click += new System.EventHandler(this.button29_Click);
             // 
             // label26
             // 
@@ -1483,7 +1474,7 @@ namespace Konstructor
             this.file.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.новыйПроектToolStripMenuItem});
             this.file.Name = "file";
-            this.file.Size = new System.Drawing.Size(59, 24);
+            this.file.Size = new System.Drawing.Size(59, 26);
             this.file.Text = "Файл";
             // 
             // новыйПроектToolStripMenuItem
@@ -1496,7 +1487,7 @@ namespace Konstructor
             // settings
             // 
             this.settings.Name = "settings";
-            this.settings.Size = new System.Drawing.Size(98, 24);
+            this.settings.Size = new System.Drawing.Size(98, 26);
             this.settings.Text = "Настройки";
             // 
             // spravka
@@ -1505,7 +1496,7 @@ namespace Konstructor
             this.ToolStripMenuItem,
             this.instruction});
             this.spravka.Name = "spravka";
-            this.spravka.Size = new System.Drawing.Size(81, 24);
+            this.spravka.Size = new System.Drawing.Size(81, 26);
             this.spravka.Text = "Справка";
             // 
             // ToolStripMenuItem
@@ -1530,9 +1521,29 @@ namespace Konstructor
             this.spravka});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(1459, 28);
+            this.menuStrip.Size = new System.Drawing.Size(1459, 30);
             this.menuStrip.TabIndex = 2;
             this.menuStrip.Text = "menuStrip1";
+            // 
+            // CheckListBoxAttestation
+            // 
+            this.CheckListBoxAttestation.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CheckListBoxAttestation.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.CheckListBoxAttestation.FormattingEnabled = true;
+            this.CheckListBoxAttestation.Location = new System.Drawing.Point(493, 319);
+            this.CheckListBoxAttestation.Name = "CheckListBoxAttestation";
+            this.CheckListBoxAttestation.Size = new System.Drawing.Size(466, 257);
+            this.CheckListBoxAttestation.TabIndex = 64;
+            // 
+            // LabelAttestation
+            // 
+            this.LabelAttestation.AutoSize = true;
+            this.LabelAttestation.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabelAttestation.Location = new System.Drawing.Point(489, 285);
+            this.LabelAttestation.Name = "LabelAttestation";
+            this.LabelAttestation.Size = new System.Drawing.Size(485, 22);
+            this.LabelAttestation.TabIndex = 65;
+            this.LabelAttestation.Text = "Не выбрана направленость (вкладка \"Титульный лист\")";
             // 
             // MainForm
             // 
@@ -1545,6 +1556,7 @@ namespace Konstructor
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.Text = "Конструктор";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.Form2_Load);
             this.tabControl2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
@@ -1565,6 +1577,7 @@ namespace Konstructor
             this.tabPage12.PerformLayout();
             this.tabPage6.ResumeLayout(false);
             this.tabControl4.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
@@ -1594,10 +1607,10 @@ namespace Konstructor
 
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button AgeStudQ;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox StudentsAge;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button LvlDifficultyQ;
         private System.Windows.Forms.ComboBox ProgramKnowledgeLevel;
         private System.Windows.Forms.ComboBox ProgramFocus;
         private System.Windows.Forms.Label label9;
@@ -1608,7 +1621,6 @@ namespace Konstructor
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox ProgramName;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox TownName;
         private System.Windows.Forms.Label label2;
@@ -1648,20 +1660,18 @@ namespace Konstructor
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TabPage tabPage8;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.Label label32;
         private System.Windows.Forms.RichTextBox richTextBox9;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.TabPage tabPage18;
-        private System.Windows.Forms.Button button29;
+        private System.Windows.Forms.Button ButtonCreateDoc;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.RichTextBox richTextBox10;
         private System.Windows.Forms.TabPage tabPage19;
         private System.Windows.Forms.RichTextBox BibliographyText;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button33;
-        private System.Windows.Forms.Button button34;
+        private System.Windows.Forms.Button ProgramFocusQ;
+        private System.Windows.Forms.Button ButtonTargetQ;
+        private System.Windows.Forms.Button PlannedResultsQ;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
@@ -1671,7 +1681,7 @@ namespace Konstructor
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.TextBox DevelopmentTimeM;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button ProgramTasksQ;
         private System.Windows.Forms.RichTextBox SubjectTasks;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.RichTextBox MetasubjectTasks;
@@ -1694,7 +1704,7 @@ namespace Konstructor
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
-        private System.Windows.Forms.Button HelpForTablePlan;
+        private System.Windows.Forms.Button TablePlanQ;
         private System.Windows.Forms.DataGridView StudyPlan;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
@@ -1715,5 +1725,10 @@ namespace Konstructor
         private ToolStripMenuItem spravka;
         private ToolStripMenuItem ToolStripMenuItem;
         private ToolStripMenuItem instruction;
+        private TabPage tabPage1;
+        private RichTextBox richTextBox1;
+        private TabPage tabPage2;
+        private CheckedListBox CheckListBoxAttestation;
+        private Label LabelAttestation;
     }
 }

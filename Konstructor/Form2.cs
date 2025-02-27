@@ -6,6 +6,8 @@ using wordTest.WordFunctions;
 using Word = Microsoft.Office.Interop.Word;
 using Konstructor.DocPatterns.MainPage;
 using Konstructor.DocPatterns;
+using Konstructor.Constants;
+using wordTest;
 
 namespace Konstructor
 {
@@ -13,8 +15,6 @@ namespace Konstructor
     {
         public MainForm()
         {
-            InitializeComponent();
-
             try
             {
                 throw new NotImplementedException();
@@ -33,27 +33,23 @@ namespace Konstructor
 
         private void button14_Click(object sender, EventArgs e)
         {
-            Form7 f7 = new Form7();
-            f7.Show();
+            new FormExplanation(new ExplanatoryForms(0)).Show();
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
-            Form4 f4 = new Form4();
-            f4.Show();
+            new FormExplanation(new ExplanatoryForms(2)).Show();
         }
 
         private void button26_Click(object sender, EventArgs e)
         {
-            Form8 f8 = new Form8();
-            f8.Show();
+            new FormExplanation(new ExplanatoryForms(1)).Show();
         }
 
 
         private void button33_Click_1(object sender, EventArgs e)
         {
-            Form12 f12 = new Form12();
-            f12.Show();
+            new FormExplanation(new ExplanatoryForms(3)).Show();
         }
 
         private void button34_Click(object sender, EventArgs e)
@@ -68,20 +64,9 @@ namespace Konstructor
             f14.Show();
         }
 
-        private void textBox8_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label43_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button27_Click(object sender, EventArgs e)
         {
-            Form9 f9 = new Form9();
-            f9.Show();
+            new TasksShowcase().Show();
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -90,11 +75,6 @@ namespace Konstructor
                 (Screen.PrimaryScreen.Bounds.Height - this.Height) / 2);
         }
 
-        private void button31_Click(object sender, EventArgs e)
-        {
-            Form4 f4 = new Form4();
-            f4.Show();
-        }
 
         //Кнопки перемещения
         private void button1_Click(object sender, EventArgs e)
@@ -214,70 +194,14 @@ namespace Konstructor
 
         private void новыйПроектToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-            //Титульник
-            CreatorName.Text = "";
-            DeveloperPosition.Text = "";
-            NameOO.Text = "";
-            FounderName.Text = "";
-            TownName.Text = "";
-            //textBox7.Text = "";
-            DevelopmentTimeY.Text = "";
-            YearDeveloped.Text = "";
-            StudentsAge.Text = "";
-            DevelopmentTimeM.Text = "";
-            ProgramName.Text = "";
-            ProgramFocus.Text = "";
-            ProgramKnowledgeLevel.Text = "";
-
-            //Записка 2  раздел
-            //Подпункт 2
-
-            //Подпункт 2
-            Actuality.Text = "";
-            ProgramSpecs.Text = "";
-            Newie.Text = "";
-            Target.Text = "";
-
-            //Подпункт 3
-            PersonalTasks.Text = "";
-            SubjectTasks.Text = "";
-            MetasubjectTasks.Text = "";
-            TimeAndCapacityTable.Rows.Clear();
-            StudyPlan.Rows.Clear();
-            //comboBox3.Text = "";
-
-            //Подпункт 4
-            richTextBox7.Text = "";
-
-            //Записка 3  раздел
-            //Подпункт 1
-            dataGridView4.Rows.Clear();
-            //dataGridView5.Rows.Clear();
-
-            //Подпункт 2
-            richTextBox8.Text = "";
-            //dataGridView6.Rows.Clear();
-
-            //Подпункт 3
-
-
-
-            //Подпункт 4
-
-
-            //Подпункт 5
-
-
-            //Подпункт 6
-
+            
         }
 
         /*
          * 
          *                                                          Начало
          *                                                  Рабочего пространства
-         *                                                 Namespace starts with...
+         *                                                 
          * 
          */
 
@@ -335,16 +259,29 @@ namespace Konstructor
             new AboutProgram().ShowDialog();
         }
 
-        /*private void оПрограммеToolStripMenuItem_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void TablePlanQ_Click(object sender, EventArgs e)
         {
-            AboutProgram aboutProgram = new AboutProgram();
-            this.ShowDialog(aboutProgram);
-        }*/
+            new FormExplanation(new ExplanatoryForms(4)).Show();
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void ProgramFocus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Constant con = new Constant();
+
+            clearListboc();
+            LabelAttestation.Text = con.testingDictionary[ProgramFocus.SelectedIndex][0];
+            CheckListBoxAttestation.Items.AddRange(con.fillCheckbox(ProgramFocus.SelectedIndex));
+        }
+
+        private void clearListboc() 
+        {
+            CheckListBoxAttestation.Items.Clear();
+            LabelAttestation.Text = String.Empty;
+        }
     }
 }
-
-
-
-
-
-
