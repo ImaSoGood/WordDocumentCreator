@@ -283,5 +283,30 @@ namespace Konstructor
             CheckListBoxAttestation.Items.Clear();
             LabelAttestation.Text = String.Empty;
         }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MethodologMeterialsText_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonMarkedMaterialsInf_Click(object sender, EventArgs e)
+        {
+            new FormExplanation(new ExplanatoryForms(0, false)).Show();
+        }
+
+        private void MethodologMaterialsButton_Click(object sender, EventArgs e)
+        {
+            new FormExplanation(new ExplanatoryForms(1, false)).Show();
+        }
     }
 }

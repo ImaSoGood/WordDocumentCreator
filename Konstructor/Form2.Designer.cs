@@ -138,9 +138,17 @@ namespace Konstructor
             this.label28 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.LabelAttestation = new System.Windows.Forms.Label();
+            this.CheckListBoxAttestation = new System.Windows.Forms.CheckedListBox();
             this.richTextBox9 = new System.Windows.Forms.RichTextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.MethodologMaterialsButton = new System.Windows.Forms.Button();
+            this.ButtonMarkedMaterialsInf = new System.Windows.Forms.Button();
+            this.MethodologMeterialsText = new System.Windows.Forms.RichTextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.MarkedMaterialsText = new System.Windows.Forms.RichTextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.tabPage19 = new System.Windows.Forms.TabPage();
             this.BibliographyText = new System.Windows.Forms.RichTextBox();
             this.label30 = new System.Windows.Forms.Label();
@@ -157,8 +165,10 @@ namespace Konstructor
             this.ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.instruction = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.CheckListBoxAttestation = new System.Windows.Forms.CheckedListBox();
-            this.LabelAttestation = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -179,6 +189,7 @@ namespace Konstructor
             this.tabPage7.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabPage8.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.tabPage19.SuspendLayout();
             this.tabPage18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
@@ -234,7 +245,7 @@ namespace Konstructor
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Size = new System.Drawing.Size(1451, 665);
+            this.tabPage3.Size = new System.Drawing.Size(1451, 667);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Титульный лист";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -532,7 +543,7 @@ namespace Konstructor
             this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage4.Size = new System.Drawing.Size(1451, 667);
+            this.tabPage4.Size = new System.Drawing.Size(1451, 665);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Комплекс основных характеристик";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -548,7 +559,7 @@ namespace Konstructor
             this.tabControl3.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(1443, 659);
+            this.tabControl3.Size = new System.Drawing.Size(1443, 657);
             this.tabControl3.TabIndex = 2;
             // 
             // tabPage13
@@ -564,7 +575,7 @@ namespace Konstructor
             this.tabPage13.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage13.Name = "tabPage13";
             this.tabPage13.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage13.Size = new System.Drawing.Size(1435, 630);
+            this.tabPage13.Size = new System.Drawing.Size(1435, 628);
             this.tabPage13.TabIndex = 1;
             this.tabPage13.Text = "Пояснительная записка";
             this.tabPage13.UseVisualStyleBackColor = true;
@@ -1141,7 +1152,7 @@ namespace Konstructor
             this.tabPage5.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage5.Size = new System.Drawing.Size(1443, 638);
+            this.tabPage5.Size = new System.Drawing.Size(1443, 636);
             this.tabPage5.TabIndex = 1;
             this.tabPage5.Text = "Календарный учебный график";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1227,7 +1238,7 @@ namespace Konstructor
             this.tabPage7.Location = new System.Drawing.Point(4, 25);
             this.tabPage7.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(1443, 638);
+            this.tabPage7.Size = new System.Drawing.Size(1443, 636);
             this.tabPage7.TabIndex = 2;
             this.tabPage7.Text = "Условия реализации программы";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -1246,7 +1257,7 @@ namespace Konstructor
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1443, 638);
+            this.panel2.Size = new System.Drawing.Size(1443, 636);
             this.panel2.TabIndex = 19;
             // 
             // richTextBox8
@@ -1352,6 +1363,26 @@ namespace Konstructor
             this.tabPage8.Text = "Формы аттестации";
             this.tabPage8.UseVisualStyleBackColor = true;
             // 
+            // LabelAttestation
+            // 
+            this.LabelAttestation.AutoSize = true;
+            this.LabelAttestation.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabelAttestation.Location = new System.Drawing.Point(489, 285);
+            this.LabelAttestation.Name = "LabelAttestation";
+            this.LabelAttestation.Size = new System.Drawing.Size(485, 22);
+            this.LabelAttestation.TabIndex = 65;
+            this.LabelAttestation.Text = "Не выбрана направленость (вкладка \"Титульный лист\")";
+            // 
+            // CheckListBoxAttestation
+            // 
+            this.CheckListBoxAttestation.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CheckListBoxAttestation.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.CheckListBoxAttestation.FormattingEnabled = true;
+            this.CheckListBoxAttestation.Location = new System.Drawing.Point(493, 319);
+            this.CheckListBoxAttestation.Name = "CheckListBoxAttestation";
+            this.CheckListBoxAttestation.Size = new System.Drawing.Size(466, 257);
+            this.CheckListBoxAttestation.TabIndex = 64;
+            // 
             // richTextBox9
             // 
             this.richTextBox9.Location = new System.Drawing.Point(0, 29);
@@ -1375,12 +1406,82 @@ namespace Konstructor
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.MethodologMaterialsButton);
+            this.tabPage2.Controls.Add(this.ButtonMarkedMaterialsInf);
+            this.tabPage2.Controls.Add(this.richTextBox3);
+            this.tabPage2.Controls.Add(this.richTextBox2);
+            this.tabPage2.Controls.Add(this.label32);
+            this.tabPage2.Controls.Add(this.label23);
+            this.tabPage2.Controls.Add(this.MethodologMeterialsText);
+            this.tabPage2.Controls.Add(this.label15);
+            this.tabPage2.Controls.Add(this.MarkedMaterialsText);
+            this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(1443, 638);
+            this.tabPage2.Size = new System.Drawing.Size(1443, 636);
             this.tabPage2.TabIndex = 6;
             this.tabPage2.Text = "Оценочные материалы";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // MethodologMaterialsButton
+            // 
+            this.MethodologMaterialsButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.MethodologMaterialsButton.Location = new System.Drawing.Point(1139, 148);
+            this.MethodologMaterialsButton.Name = "MethodologMaterialsButton";
+            this.MethodologMaterialsButton.Size = new System.Drawing.Size(282, 28);
+            this.MethodologMaterialsButton.TabIndex = 3;
+            this.MethodologMaterialsButton.Text = "Виды методических материалов";
+            this.MethodologMaterialsButton.UseVisualStyleBackColor = false;
+            this.MethodologMaterialsButton.Click += new System.EventHandler(this.MethodologMaterialsButton_Click);
+            // 
+            // ButtonMarkedMaterialsInf
+            // 
+            this.ButtonMarkedMaterialsInf.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.ButtonMarkedMaterialsInf.Location = new System.Drawing.Point(1137, 3);
+            this.ButtonMarkedMaterialsInf.Name = "ButtonMarkedMaterialsInf";
+            this.ButtonMarkedMaterialsInf.Size = new System.Drawing.Size(282, 28);
+            this.ButtonMarkedMaterialsInf.TabIndex = 3;
+            this.ButtonMarkedMaterialsInf.Text = "Информация об оценочных материалах";
+            this.ButtonMarkedMaterialsInf.UseVisualStyleBackColor = false;
+            this.ButtonMarkedMaterialsInf.Click += new System.EventHandler(this.ButtonMarkedMaterialsInf_Click);
+            // 
+            // MethodologMeterialsText
+            // 
+            this.MethodologMeterialsText.Location = new System.Drawing.Point(5, 182);
+            this.MethodologMeterialsText.Name = "MethodologMeterialsText";
+            this.MethodologMeterialsText.Size = new System.Drawing.Size(1414, 105);
+            this.MethodologMeterialsText.TabIndex = 2;
+            this.MethodologMeterialsText.Text = "";
+            this.MethodologMeterialsText.TextChanged += new System.EventHandler(this.MethodologMeterialsText_TextChanged);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label15.Location = new System.Drawing.Point(1, 145);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(262, 26);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Методические материалы";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
+            // 
+            // MarkedMaterialsText
+            // 
+            this.MarkedMaterialsText.Location = new System.Drawing.Point(3, 37);
+            this.MarkedMaterialsText.Name = "MarkedMaterialsText";
+            this.MarkedMaterialsText.Size = new System.Drawing.Size(1414, 105);
+            this.MarkedMaterialsText.TabIndex = 2;
+            this.MarkedMaterialsText.Text = "";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(-1, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(233, 26);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Оценочные материалы";
             // 
             // tabPage19
             // 
@@ -1425,7 +1526,7 @@ namespace Konstructor
             this.tabPage18.Location = new System.Drawing.Point(4, 25);
             this.tabPage18.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage18.Name = "tabPage18";
-            this.tabPage18.Size = new System.Drawing.Size(1451, 667);
+            this.tabPage18.Size = new System.Drawing.Size(1451, 665);
             this.tabPage18.TabIndex = 9;
             this.tabPage18.Text = "Приложения";
             this.tabPage18.UseVisualStyleBackColor = true;
@@ -1525,25 +1626,43 @@ namespace Konstructor
             this.menuStrip.TabIndex = 2;
             this.menuStrip.Text = "menuStrip1";
             // 
-            // CheckListBoxAttestation
+            // label23
             // 
-            this.CheckListBoxAttestation.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CheckListBoxAttestation.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.CheckListBoxAttestation.FormattingEnabled = true;
-            this.CheckListBoxAttestation.Location = new System.Drawing.Point(493, 319);
-            this.CheckListBoxAttestation.Name = "CheckListBoxAttestation";
-            this.CheckListBoxAttestation.Size = new System.Drawing.Size(466, 257);
-            this.CheckListBoxAttestation.TabIndex = 64;
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label23.Location = new System.Drawing.Point(4, 293);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(211, 26);
+            this.label23.TabIndex = 0;
+            this.label23.Text = "Методики и техники";
+            this.label23.Click += new System.EventHandler(this.label23_Click);
             // 
-            // LabelAttestation
+            // richTextBox2
             // 
-            this.LabelAttestation.AutoSize = true;
-            this.LabelAttestation.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabelAttestation.Location = new System.Drawing.Point(489, 285);
-            this.LabelAttestation.Name = "LabelAttestation";
-            this.LabelAttestation.Size = new System.Drawing.Size(485, 22);
-            this.LabelAttestation.TabIndex = 65;
-            this.LabelAttestation.Text = "Не выбрана направленость (вкладка \"Титульный лист\")";
+            this.richTextBox2.Location = new System.Drawing.Point(5, 322);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(1414, 105);
+            this.richTextBox2.TabIndex = 2;
+            this.richTextBox2.Text = "";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label32.Location = new System.Drawing.Point(0, 447);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(570, 26);
+            this.label32.TabIndex = 0;
+            this.label32.Text = "Краткое описание работы с методическими материалами";
+            this.label32.Click += new System.EventHandler(this.label23_Click);
+            // 
+            // richTextBox3
+            // 
+            this.richTextBox3.Location = new System.Drawing.Point(1, 476);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.Size = new System.Drawing.Size(1414, 105);
+            this.richTextBox3.TabIndex = 2;
+            this.richTextBox3.Text = "";
             // 
             // MainForm
             // 
@@ -1586,6 +1705,8 @@ namespace Konstructor
             this.panel2.PerformLayout();
             this.tabPage8.ResumeLayout(false);
             this.tabPage8.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.tabPage19.ResumeLayout(false);
             this.tabPage19.PerformLayout();
             this.tabPage18.ResumeLayout(false);
@@ -1730,5 +1851,15 @@ namespace Konstructor
         private TabPage tabPage2;
         private CheckedListBox CheckListBoxAttestation;
         private Label LabelAttestation;
+        private Label label7;
+        private RichTextBox MarkedMaterialsText;
+        private Button ButtonMarkedMaterialsInf;
+        private Button MethodologMaterialsButton;
+        private RichTextBox MethodologMeterialsText;
+        private Label label15;
+        private RichTextBox richTextBox2;
+        private Label label23;
+        private RichTextBox richTextBox3;
+        private Label label32;
     }
 }

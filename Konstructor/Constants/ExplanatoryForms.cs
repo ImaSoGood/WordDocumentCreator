@@ -9,13 +9,19 @@ namespace Konstructor.Constants
 {
     public class ExplanatoryForms
     {
+        Constant con = new Constant();
         private string header, text;
 
         public ExplanatoryForms(int number) 
         {
-            Constant con = new Constant();
             header = con.header[number];
             text = con.text[number];
+        }
+
+        public ExplanatoryForms(int num, bool checker)
+        {
+            header = con.evaluationMaterialsHeaders[num];
+            text = con.evaluationMaterialsText[num];
         }
 
         public string getHeader() 
