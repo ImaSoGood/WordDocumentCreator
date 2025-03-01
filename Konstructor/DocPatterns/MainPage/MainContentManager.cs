@@ -57,7 +57,25 @@ namespace wordTest.DocPatterns
             contentManager.AddNumberedPointWithMultipleLines("Учебный план: ");
 
             new TableCreator(doc).Plan(StudyPlan);
-            contentManager.InsertPageBreak();
+            //contentManager.InsertPageBreak();
+
+            contentManager.AddNumberedPointWithMultipleLines
+                (
+                    "Формы аттестации/контроля для выявления предметных и метапредметных результатов:"
+                );
+
+            contentManager.AddNumberedPointWithMultipleLines
+                (
+                    "Оценочные материалы \n" + Text.markedMaterials
+                );
+
+            contentManager.AddNumberedPointWithMultipleLines
+                (
+                    "Методическое обеспечение программы \n" + 
+                    "Методические материалы: \n" + Text.methodologicalMaterials + "\n" + 
+                    "Методики и технологии: \n" + Text.methodologicalTech + "\n" +
+                    "Краткое описание работы с методическими материалами: + \n" + Text.briefContentMaterials
+                );
         }
     }
 }

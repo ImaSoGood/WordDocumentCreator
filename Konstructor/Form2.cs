@@ -217,7 +217,8 @@ namespace Konstructor
             titlePageManager.CreateTitlePage();
 
             MainContentManager mainContentManager = new MainContentManager(document, new MainPageText(Actuality.Text, Newie.Text, ProgramSpecs.Text, Target.Text, MetasubjectTasks.Text,
-                PersonalTasks.Text, SubjectTasks.Text, "plannedResMetasubjects", "plannedResSubjects", "plannedResPersonal", ProgramKnowledgeLevel.Text, ProgramFocus.Text));
+                PersonalTasks.Text, SubjectTasks.Text, "plannedResMetasubjects", "plannedResSubjects", "plannedResPersonal", ProgramKnowledgeLevel.Text, ProgramFocus.Text, MarkedMaterialsText.Text, 
+                MethodologMeterialsText.Text, MethodsTechText.Text, BriefContentText.Text));
             mainContentManager.CreateMainPage(TimeAndCapacityTable, StudyPlan);
 
             string text = BibliographyText.Text;
