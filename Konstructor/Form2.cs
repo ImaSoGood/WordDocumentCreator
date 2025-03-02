@@ -22,6 +22,11 @@ namespace Konstructor
             catch
             {
                 InitializeComponent();
+
+                ButtonBack.BringToFront();
+                ButtonNext.BringToFront();
+
+                UpdateButtonState();
             }
         }
 
@@ -308,6 +313,84 @@ namespace Konstructor
         private void MethodologMaterialsButton_Click(object sender, EventArgs e)
         {
             new FormExplanation(new ExplanatoryForms(1, false)).Show();
+        }
+
+        /*
+         * 
+         * ================================================================================================
+         * ================================================================================================
+         */
+
+        private void ButtonBack_Click(object sender, EventArgs e)
+        {
+            TabControl currentTabControl = GetCurrentTabControl();
+
+            if (currentTabControl != null && currentTabControl.SelectedIndex > 0)
+            {
+                // Переход на предыдущую вкладку
+                currentTabControl.SelectedIndex--;
+            }
+
+            UpdateButtonState();
+        }
+
+        private void ButtonNext_Click(object sender, EventArgs e)
+        {
+            TabControl currentTabControl = GetCurrentTabControl();
+
+            if (currentTabControl != null && currentTabControl.SelectedIndex < currentTabControl.TabCount - 1)
+            {
+                // Переход на следующую вкладку
+                currentTabControl.SelectedIndex++;
+            }
+
+            UpdateButtonState();
+        }
+
+        private void UpdateButtonState()
+        {
+            showAsFirst();
+
+            TabControl currentTabControl = GetCurrentTabControl();
+
+            if (currentTabControl != null)
+            {
+                ButtonBack.Enabled = currentTabControl.SelectedIndex > 0;
+                ButtonNext.Enabled = currentTabControl.SelectedIndex < currentTabControl.TabCount - 1;
+            }
+        }
+
+        private void TabControl_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Обновляем состояние кнопок при изменении вкладки
+            UpdateButtonState();
+        }
+
+        private TabControl GetCurrentTabControl()
+        {
+            if (tabControl2.SelectedTab != null && tabControl2.SelectedTab.Controls.Contains(tabControl3))
+            {
+                return tabControl3;
+            }
+            else if (tabControl2.SelectedTab != null && tabControl2.SelectedTab.Controls.Contains(tabControl4))
+            {
+                return tabControl4;
+            }
+            else
+            {
+                return tabControl2;
+            }
+        }
+
+        private void showAsFirst() 
+        {
+            ButtonBack.BringToFront();
+            ButtonNext.BringToFront();
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

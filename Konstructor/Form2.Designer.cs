@@ -31,8 +31,8 @@ namespace Konstructor
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -169,6 +169,8 @@ namespace Konstructor
             this.ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.instruction = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.ButtonBack = new System.Windows.Forms.Button();
+            this.ButtonNext = new System.Windows.Forms.Button();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -203,13 +205,14 @@ namespace Konstructor
             this.tabControl2.Controls.Add(this.tabPage6);
             this.tabControl2.Controls.Add(this.tabPage19);
             this.tabControl2.Controls.Add(this.tabPage18);
-            this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.tabControl2.Location = new System.Drawing.Point(0, 28);
             this.tabControl2.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1459, 696);
+            this.tabControl2.Size = new System.Drawing.Size(1459, 643);
             this.tabControl2.TabIndex = 3;
+            this.tabControl2.SelectedIndexChanged += new System.EventHandler(this.TabControl_SelectedIndexChanged);
             // 
             // tabPage3
             // 
@@ -245,10 +248,11 @@ namespace Konstructor
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Size = new System.Drawing.Size(1451, 667);
+            this.tabPage3.Size = new System.Drawing.Size(1451, 614);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Титульный лист";
             this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // label44
             // 
@@ -543,7 +547,7 @@ namespace Konstructor
             this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage4.Size = new System.Drawing.Size(1451, 665);
+            this.tabPage4.Size = new System.Drawing.Size(1451, 750);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Комплекс основных характеристик";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -559,8 +563,9 @@ namespace Konstructor
             this.tabControl3.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(1443, 657);
+            this.tabControl3.Size = new System.Drawing.Size(1443, 742);
             this.tabControl3.TabIndex = 2;
+            this.tabControl3.SelectedIndexChanged += new System.EventHandler(this.TabControl_SelectedIndexChanged);
             // 
             // tabPage13
             // 
@@ -575,7 +580,7 @@ namespace Konstructor
             this.tabPage13.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage13.Name = "tabPage13";
             this.tabPage13.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage13.Size = new System.Drawing.Size(1435, 628);
+            this.tabPage13.Size = new System.Drawing.Size(1435, 630);
             this.tabPage13.TabIndex = 1;
             this.tabPage13.Text = "Пояснительная записка";
             this.tabPage13.UseVisualStyleBackColor = true;
@@ -654,7 +659,7 @@ namespace Konstructor
             this.tabPage14.Location = new System.Drawing.Point(4, 25);
             this.tabPage14.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage14.Name = "tabPage14";
-            this.tabPage14.Size = new System.Drawing.Size(1435, 628);
+            this.tabPage14.Size = new System.Drawing.Size(1435, 630);
             this.tabPage14.TabIndex = 2;
             this.tabPage14.Text = "Цель и задачи ДОП";
             this.tabPage14.UseVisualStyleBackColor = true;
@@ -668,7 +673,7 @@ namespace Konstructor
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1435, 628);
+            this.panel1.Size = new System.Drawing.Size(1435, 630);
             this.panel1.TabIndex = 19;
             // 
             // ButtonTargetQ
@@ -708,7 +713,7 @@ namespace Konstructor
             this.tabPage16.Location = new System.Drawing.Point(4, 25);
             this.tabPage16.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage16.Name = "tabPage16";
-            this.tabPage16.Size = new System.Drawing.Size(1435, 628);
+            this.tabPage16.Size = new System.Drawing.Size(1435, 713);
             this.tabPage16.TabIndex = 4;
             this.tabPage16.Text = "Содержание ДОП";
             this.tabPage16.UseVisualStyleBackColor = true;
@@ -732,7 +737,7 @@ namespace Konstructor
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1435, 628);
+            this.panel3.Size = new System.Drawing.Size(1435, 713);
             this.panel3.TabIndex = 21;
             // 
             // TablePlanQ
@@ -759,8 +764,8 @@ namespace Konstructor
             // 
             // StudyPlan
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.StudyPlan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.StudyPlan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle39;
             this.StudyPlan.BackgroundColor = System.Drawing.SystemColors.Window;
             this.StudyPlan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.StudyPlan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -833,8 +838,8 @@ namespace Konstructor
             // 
             // TimeAndCapacityTable
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.TimeAndCapacityTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.TimeAndCapacityTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle40;
             this.TimeAndCapacityTable.BackgroundColor = System.Drawing.SystemColors.Window;
             this.TimeAndCapacityTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.TimeAndCapacityTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1004,7 +1009,7 @@ namespace Konstructor
             this.tabPage12.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage12.Name = "tabPage12";
             this.tabPage12.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage12.Size = new System.Drawing.Size(1435, 628);
+            this.tabPage12.Size = new System.Drawing.Size(1435, 630);
             this.tabPage12.TabIndex = 0;
             this.tabPage12.Text = "Планируемые результаты";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -1104,7 +1109,7 @@ namespace Konstructor
             this.tabPage6.Location = new System.Drawing.Point(4, 25);
             this.tabPage6.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1451, 667);
+            this.tabPage6.Size = new System.Drawing.Size(1451, 750);
             this.tabPage6.TabIndex = 3;
             this.tabPage6.Text = "Комплекс организационно-педагогических условий";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -1121,15 +1126,16 @@ namespace Konstructor
             this.tabControl4.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl4.Name = "tabControl4";
             this.tabControl4.SelectedIndex = 0;
-            this.tabControl4.Size = new System.Drawing.Size(1451, 667);
+            this.tabControl4.Size = new System.Drawing.Size(1451, 750);
             this.tabControl4.TabIndex = 3;
+            this.tabControl4.SelectedIndexChanged += new System.EventHandler(this.TabControl_SelectedIndexChanged);
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.richTextBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(1443, 638);
+            this.tabPage1.Size = new System.Drawing.Size(1443, 721);
             this.tabPage1.TabIndex = 5;
             this.tabPage1.Text = "Нормативно-правовое обеспечение";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1139,7 +1145,7 @@ namespace Konstructor
             this.richTextBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox1.Location = new System.Drawing.Point(0, 0);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(1444, 632);
+            this.richTextBox1.Size = new System.Drawing.Size(1444, 589);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
@@ -1152,7 +1158,7 @@ namespace Konstructor
             this.tabPage5.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage5.Size = new System.Drawing.Size(1443, 636);
+            this.tabPage5.Size = new System.Drawing.Size(1443, 638);
             this.tabPage5.TabIndex = 1;
             this.tabPage5.Text = "Календарный учебный график";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1238,7 +1244,7 @@ namespace Konstructor
             this.tabPage7.Location = new System.Drawing.Point(4, 25);
             this.tabPage7.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(1443, 636);
+            this.tabPage7.Size = new System.Drawing.Size(1443, 638);
             this.tabPage7.TabIndex = 2;
             this.tabPage7.Text = "Условия реализации программы";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -1257,7 +1263,7 @@ namespace Konstructor
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1443, 636);
+            this.panel2.Size = new System.Drawing.Size(1443, 638);
             this.panel2.TabIndex = 19;
             // 
             // richTextBox8
@@ -1266,7 +1272,7 @@ namespace Konstructor
             this.richTextBox8.Location = new System.Drawing.Point(0, 423);
             this.richTextBox8.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox8.Name = "richTextBox8";
-            this.richTextBox8.Size = new System.Drawing.Size(1443, 190);
+            this.richTextBox8.Size = new System.Drawing.Size(1443, 152);
             this.richTextBox8.TabIndex = 73;
             this.richTextBox8.Text = "";
             // 
@@ -1358,7 +1364,7 @@ namespace Konstructor
             this.tabPage8.Location = new System.Drawing.Point(4, 25);
             this.tabPage8.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(1443, 636);
+            this.tabPage8.Size = new System.Drawing.Size(1443, 638);
             this.tabPage8.TabIndex = 4;
             this.tabPage8.Text = "Формы аттестации";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -1449,7 +1455,7 @@ namespace Konstructor
             // 
             this.BriefContentText.Location = new System.Drawing.Point(1, 476);
             this.BriefContentText.Name = "BriefContentText";
-            this.BriefContentText.Size = new System.Drawing.Size(1414, 105);
+            this.BriefContentText.Size = new System.Drawing.Size(1414, 95);
             this.BriefContentText.TabIndex = 2;
             this.BriefContentText.Text = "";
             // 
@@ -1528,7 +1534,7 @@ namespace Konstructor
             this.tabPage19.Location = new System.Drawing.Point(4, 25);
             this.tabPage19.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage19.Name = "tabPage19";
-            this.tabPage19.Size = new System.Drawing.Size(1451, 665);
+            this.tabPage19.Size = new System.Drawing.Size(1451, 750);
             this.tabPage19.TabIndex = 10;
             this.tabPage19.Text = "Список литературы";
             this.tabPage19.UseVisualStyleBackColor = true;
@@ -1539,7 +1545,7 @@ namespace Konstructor
             this.BibliographyText.Location = new System.Drawing.Point(0, 25);
             this.BibliographyText.Margin = new System.Windows.Forms.Padding(4);
             this.BibliographyText.Name = "BibliographyText";
-            this.BibliographyText.Size = new System.Drawing.Size(1451, 539);
+            this.BibliographyText.Size = new System.Drawing.Size(1451, 547);
             this.BibliographyText.TabIndex = 19;
             this.BibliographyText.Text = "";
             // 
@@ -1564,7 +1570,7 @@ namespace Konstructor
             this.tabPage18.Location = new System.Drawing.Point(4, 25);
             this.tabPage18.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage18.Name = "tabPage18";
-            this.tabPage18.Size = new System.Drawing.Size(1451, 665);
+            this.tabPage18.Size = new System.Drawing.Size(1451, 750);
             this.tabPage18.TabIndex = 9;
             this.tabPage18.Text = "Приложения";
             this.tabPage18.UseVisualStyleBackColor = true;
@@ -1572,7 +1578,7 @@ namespace Konstructor
             // ButtonCreateDoc
             // 
             this.ButtonCreateDoc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ButtonCreateDoc.Location = new System.Drawing.Point(1239, 550);
+            this.ButtonCreateDoc.Location = new System.Drawing.Point(1239, 515);
             this.ButtonCreateDoc.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonCreateDoc.Name = "ButtonCreateDoc";
             this.ButtonCreateDoc.Size = new System.Drawing.Size(203, 73);
@@ -1664,13 +1670,35 @@ namespace Konstructor
             this.menuStrip.TabIndex = 2;
             this.menuStrip.Text = "menuStrip1";
             // 
+            // ButtonBack
+            // 
+            this.ButtonBack.Location = new System.Drawing.Point(1131, 678);
+            this.ButtonBack.Name = "ButtonBack";
+            this.ButtonBack.Size = new System.Drawing.Size(155, 43);
+            this.ButtonBack.TabIndex = 52;
+            this.ButtonBack.Text = "Назад";
+            this.ButtonBack.UseVisualStyleBackColor = true;
+            this.ButtonBack.Click += new System.EventHandler(this.ButtonBack_Click);
+            // 
+            // ButtonNext
+            // 
+            this.ButtonNext.Location = new System.Drawing.Point(1292, 678);
+            this.ButtonNext.Name = "ButtonNext";
+            this.ButtonNext.Size = new System.Drawing.Size(155, 43);
+            this.ButtonNext.TabIndex = 51;
+            this.ButtonNext.Text = "Далее";
+            this.ButtonNext.UseVisualStyleBackColor = true;
+            this.ButtonNext.Click += new System.EventHandler(this.ButtonNext_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1459, 724);
+            this.ClientSize = new System.Drawing.Size(1459, 733);
+            this.Controls.Add(this.ButtonBack);
             this.Controls.Add(this.tabControl2);
             this.Controls.Add(this.menuStrip);
+            this.Controls.Add(this.ButtonNext);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
@@ -1861,5 +1889,7 @@ namespace Konstructor
         private Label label23;
         private RichTextBox BriefContentText;
         private Label label32;
+        private Button ButtonBack;
+        private Button ButtonNext;
     }
 }
